@@ -4,10 +4,7 @@ import '../styles/global.scss'
 
 function MyApp({ Component, pageProps }: AppProps) { 
   return (
-        <main>
         <Component {...pageProps} />
-        </main>
-   
   )
 }
 
