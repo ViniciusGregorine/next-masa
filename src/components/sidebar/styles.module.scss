@@ -1,0 +1,17 @@
+.sidebarContainer {
+    // position: absolute;
+
+    display:  flex;
+    flex-direction: column;
+
+    height: 100%;
+    width: 6.25rem;
+
+    background-color: var(--primary);
+    color: white;
+
+    .nav{
+       text-decoration: none; 
+    }
+    
+}
