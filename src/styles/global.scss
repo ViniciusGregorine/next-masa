@@ -4,13 +4,32 @@
     box-sizing: border-box;
 }
 
+html, body, p, input, textarea {
+    font: 500 1rem Roboto, sans-serif;
+}
+
+h1 {
+    font: lighter 6rem;
+}
+
+h2 {
+    font: lighter 3.75rem;
+}
+
+h3 {
+    font: 500 3rem;
+}
+
 :root {
-    --white: #FFF;
-    
+    // colors
     --primary: #6E00EE;
+    --primary-variant: #3700B3;
+    --primary-background: #23036A;; 
 
     --secondary: #03DAC5;
+    --secondary-variant: #018786;
 
+    --error: #B00020;
     --background: #FFFFFF;
 
 }
@@ -18,4 +37,4 @@
 html, body {
     height: 100vh;
     width: 100vw;
-  }
+}
