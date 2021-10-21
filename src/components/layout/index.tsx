@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react'
-import Link from 'next/link'
 import Head from 'next/head'
 
 import Sidebar from '../sidebar'
@@ -20,28 +19,16 @@ const Layout = ({ children, title = 'masa' }: Props) => (
     </Head>
     <Sidebar/>
     <div className={style.wrapper}>
-      <header>
-        <nav>
-          <Link href="/">
-            <a>dashboard</a>
-          </Link>{' '}
-          |{' '}
-          <Link href="/about">
-            <a>About</a>
-          </Link>{' '}
-          |{' '}
-          <Link href="/users">
-            <a>Users List</a>
-          </Link>{' '}
-          | <a href="/api/users">Users API</a>
-        </nav>
-      </header>
+      {/* <header>
+     <p>this is the header</p> 
+      </header> */}
       <main>
         {children}
       </main>
       <footer>
-        <hr />
+        <hr/>
         <span>I'm here to stay (Footer)</span>
+     
       </footer>
     </div>
   </div>
