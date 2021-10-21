@@ -1,19 +1,26 @@
 import * as React from 'react'
-import ListItem from './ListItem'
-import { User } from '../interfaces'
+import { SimplePlace } from '../interfaces/place'
 
 type Props = {
-  items: User[]
+  items: SimplePlace[]
 }
 
 const List = ({ items }: Props) => (
-  <ul>
-    {items.map((item) => (
-      <li key={item.id}>
-        <ListItem data={item} />
-      </li>
-    ))}
-  </ul>
+  <div>
+    {
+      items.map((item) => (
+        <div>
+          <h2>{item.description ?? 'Erro'}</h2>
+          <ul>
+            <li>
+            { item.note}
+            </li>  
+          </ul> 
+        </div>
+      ))
+    }
+  </div>
 )
+  
 
 export default List
